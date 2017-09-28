@@ -1,0 +1,13 @@
+{{!-- it might be said: --}}
+
+<div class="dataWidget">
+  {{#each partials.areas.locations}}
+    <div class="location">
+      <h3>{{name}}</h3>
+      <a href="{{someUrl}}">
+        <img src="{{iconUrl}}" alt="{{name}}">
+      </a>
+    </div>
+    {{where}}, {{population}}
+  {{/each}}
+</div>

@@ -1,0 +1,14 @@
+<!-- It might be said: -->
+<h1>Request group rate</h1>
+<form class="" action="index.html" method="post">
+  <input type="hidden" name="referrer" value="">
+  Name: <input type="text" name="name" id="fieldName"><br>
+  Group size: <input type="text" name="groupSize" value=""><br>
+  Email: <input type="email" name="email"><br>
+  <input type="submit" value="Submit">
+</form>
+<script>
+  $(document).ready(() => {
+    $('input[name="referrer"]').val(document.referrer)
+  })
+</script>
